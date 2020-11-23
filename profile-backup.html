@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> Manage Profile </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+ 	<script type="text/javascript" src="jquery.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+	<link rel="stylesheet" href="vendor/font-awesome.css">
+	<link rel="stylesheet" href="vendor/progressCicle/css/styles.css">
+ 	<link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+
+<!-- header -->
+<div class="container">
+	<div class="row">
+
+	<div class="header__cover">
+
+		<div class="__leftMenu">
+			<span class="__logo">
+				<img src="image/__headerMenu/logo.png" alt="">
+
+			</span>
+			<span class="searchbar">
+				<form action="/action_page.php">
+					<button type="submit"><i class="fa fa-search"></i></button>
+					<input type="text" placeholder="Bất cứ đâu - Trải nghiệm" name="search">
+					
+					</form>
+			</span>
+		</div>
+		<!-- end leftbar -->
+
+		<div class="__rightMenu">
+			<ul>Khám phá <i class="fa fa-caret-down"></i>
+				<li> <a href="">exam1</a> </li>
+				<li> <a href="">exam1</a> </li>
+				<li> <a href="">exam1</a> </li>
+			</ul>
+			<ul>
+				<li><a href="">Về chúng tôi</a></li>
+			</ul>
+			<ul>
+				<li><a href="">blog</a></li>
+			</ul>
+
+			<span class="status">
+				<img src="image/__headerMenu/mailIcon.png" alt="">
+				<div class="notification">5</div>
+			</span>
+			<span class="status">
+				<img src="image/__headerMenu/alarmIcon.png" alt="">
+				<div class="notification">10</div>
+			</span>
+
+			<span class="account">
+				<img src="image/__headerMenu/profileAvatar.png" alt="">
+				<ul>Khám phá <i class="fa fa-caret-down"></i>
+					<li> <a href="">exam1</a> </li>
+					<li> <a href="">exam1</a> </li>
+					<li> <a href="">exam1</a> </li>
+				</ul>
+			</span>
+
+		</div>
+		<!-- end rightbar  -->
+
+	</div>
+	<!-- end header cover  -->
+</div>
+</div>
+<!-- end container header -->
+
+	<div class="container __content ">
+		<div class="row">
+			<div class="col-sm-3 col-md-3 leftContent">
+
+				<!-- first div: load infomation about the profile  -->
+				<div class="profile Bar">
+
+					<span class="profileImg">
+
+						<!-- progress Circle Bar, profile Avatar, change Avatar Button -->
+						<div class="progress-circle progressing p-75">
+							<div class="progress-circle-border">
+							<div class="left-half-circle"></div><div class="right-half-circle"></div>
+							</div>
+							<div class="progress-circle-content">
+
+								<div class="avatar">
+									<img src="image/__profilePage/avatarProfile.png" alt="">
+								</div>
+								<div class="changeAvatar">
+									<a href=""><img src="image/__profilePage/cameraIcon.png" alt=""></a>
+								</div>
+
+							</div>
+						</div>
+
+					</span> 
+					<!-- end span about profile image -->
+
+					<span class="info">
+						<h3>Xin chào, Maria!</h3>
+						<p>bạn đã hoàn thành <b>75%</b> hồ sơ, hãy tiếp tục!</p>
+					</span>
+
+				</div>
+
+
+				
+			<ul class="nav nav-pills" role="tablist">
+				<!-- show social notification  -->
+					<div class="social settingBar nav-item">
+						<a class="nav-link" data-toggle="pill" href="#socialContent">
+							<img src="image/__profilePage/globalIcon.png" alt="">
+							<p>yêu cầu cộng đồng</p>
+							<span class="count">4</span>						
+						</a>
+					</div>
+
+
+				
+				
+
+				<!-- user accont manage and setting  -->
+					<p>Quản lý tài khoản</p>
+					<div class="editUser settingBar nav-item">
+						<a class="nav-link active" data-toggle="pill" href="#editUserContent">
+							<img src="image/__profilePage/editProfileIcon.png" alt="">
+							<p>Cập nhật hồ sơ</p>
+							<span class="arlert active">4</span>
+						</a>
+					</div>
+
+					<div class="changePassword settingBar nav-item">
+						<a class="nav-link" data-toggle="pill" href="#changePasswordContent">
+							<img src="image/__profilePage/passwordIcon.png" alt="">
+							<p>đổi mật khẩu</p>
+							<span class="count"></span>	
+						</a>
+
+					</div>
+
+					<div class="logout settingBar nav-item">
+						<a class="nav-link" data-toggle="pill" href="#logoutContent">
+							<img src="image/__profilePage/logoutIcon.png" alt="">
+							<p>Đăng xuất</p>
+							<span class="count"></span>
+						</a>
+					</div>
+
+				<!-- Tour manage and setting  -->
+
+					<p>Quản lý tour</p>
+					<div class="addTour settingBar nav-item">
+						<a class="nav-link" data-toggle="pill" href="#addTourContent">
+							<img src="image/__profilePage/addTourIcon.png" alt="">
+							<p>Thêm tour</p>
+							<span class="count"></span>
+						</a>
+					</div>
+
+					<div class="manageTour settingBar nav-item">
+						<a class="nav-link" data-toggle="pill" href="#manageTourContent">
+							<img src="image/__profilePage/manageTourIcon.png" alt="">
+							<p>Quản lý tour</p>
+							<span class="count">4</span>
+						</a>
+					</div>
+
+				<!-- Tour manage and setting  -->
+					<p>Quản lý bài viết</p>
+					<div class="addPost settingBar nav-item">
+						<a class="nav-link" data-toggle="pill" href="#addPostContent">
+							<img src="image/__profilePage/addPostIcon.png" alt="">
+							<p>Thêm bài viết</p>
+							<span class="count"></span>
+						</a>
+					</div>
+
+					<div class="managePost settingBar nav-item">
+						<a class="nav-link" data-toggle="pill" href="#managePostContent">
+							<img src="image/__profilePage/managePostIcon.png" alt="">
+							<p>Quản lý bài viết</p>
+							<span class="count">4</span>
+						</a>
+					</div>
+			</ul>
+
+
+
+
+			</div>
+			<!-- end Left Content  -->
+
+			<div class="col-sm-1 col-md-1 empty">
+				<p>Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
+			</div>
+
+
+			<!-- right Content  -->
+			<div class="col-sm-7 col-md-7 rightContent">
+
+  <!-- Tab panes for each Admin Setting content -->
+  <div class="tab-content">
+
+
+		<!-- 
+			## content social
+		-->
+		<div id="socialContent" class="container tab-pane fade "><br>
+
+			<h3>Yêu cầu cộng đồng</h3>
+
+		</div>
+		
+
+		<!-- 
+			## content editUser 
+		-->
+		<div id="editUserContent" class="container tab-pane active"><br>
+
+			<h3>Hồ sơ của tôi</h3>
+
+			<!-- basic information  -->
+			<p class="title">thông tin cơ bản</p>
+
+			<div class="accordion" id="basicInformation">
+
+				<div class="card">
+					<!-- header  -->
+					<div class="card-header" >
+						<div class="mb-0">
+							<img src="image/__profilePage/checkedIcon.png" alt="">
+							<p>Họ tên</p>
+							<p class="showName">Maria glover</p>
+
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<i class="fa fa-caret-down"></i>
+							</button>
+
+						</div>
+					</div>
+			
+					<!-- collapse content  -->
+					<div id="collapseOne" class="collapse show" aria-labelledby="" data-parent="#accordionExample">
+						<div class="card-body">
+							<div class="form-group">
+							
+								Tên của bạn <input type="text" name="firstName" class="form-control" id="" placeholder="họ" >
+								Họ của bạn <input type="text" name="lastName" class="form-control" id=""  placeholder="tên" >
+								<button type="submit" class="btn btn-primary">lưu lại</button>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- end card  -->
+
+				<div class="card">
+					<div class="card-header">
+						
+						<div class="mb-0">
+							<img src="image/__profilePage/checkedIcon.png" alt="">
+							<p>Ngày tháng năm sinh</p>
+							<p class="showName">12/12/2020</p>
+
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								<i class="fa fa-caret-down"></i>
+							</button>
+						</div>
+					</div>
+
+					<div id="collapseTwo" class="collapse" aria-labelledby="" data-parent="#accordionExample">
+						<div class="card-body">
+							<div class="form-group">
+								
+								Ngày tháng năm sinh <input type="text" name="birthDay" class="form-control" id="" placeholder="ngày sinh" >
+								<button type="submit" class="btn btn-primary">lưu lại</button>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<div class="mb-0">
+							<img src="image/__profilePage/checkedIcon.png" alt="">
+							<p>Email</p>
+							<p class="showName">Email@example.com</p>
+
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								<i class="fa fa-caret-down"></i>
+							</button>
+						</div>
+					</div>
+					<div id="collapseThree" class="collapse" data-parent="#accordionExample">
+						<div class="card-body">
+							<div class="form-group">
+									
+								Tên của bạn <input type="text" name="firstName" class="form-control" id="" placeholder="họ" >
+								<button type="submit" class="btn btn-primary">lưu lại</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+		  </div>
+		  <!-- end collapse basic information -->
+
+
+		<!-- 
+			## thông tin khác 
+		-->
+			<p class="title">thông tin khác</p>
+			<div class="accordion" id="otherInfomation">
+
+				<div class="card">
+					<!-- header  -->
+					<div class="card-header">
+						<div class="mb-0">
+							<img src="image/__profilePage/checkedIcon.png" alt="">
+							<p>Chi phí mỗi giờ</p>
+							<p class="showName">$30 - 39</p>
+
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#__price" aria-expanded="true" aria-controls="__price">
+								<i class="fa fa-caret-down"></i>
+							</button>
+
+						</div>
+					</div>
+			
+					<!-- collapse content  -->
+					<div id="__price" class="collapse show" aria-labelledby="" data-parent="#otherInfomation">
+						<div class="card-body">
+							<div class="form-group">
+							
+								Chi phí <input type="text" name="lastName" class="form-control" id=""  placeholder="tên" >
+								<button type="submit" class="btn btn-primary">lưu lại</button>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- end card  -->
+
+				<div class="card">
+					<div class="card-header" >
+						
+						<div class="mb-0">
+							<img src="image/__profilePage/uncheckIcon.png" alt="">
+							<p>Valid Firstaid Certificate</p>
+							<p class="showName"> </p>
+
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#certification" aria-expanded="false" aria-controls="certification">
+								<i class="fa fa-caret-down"></i>
+							</button>
+						</div>
+					</div>
+
+					<div id="certification" class="collapse" aria-labelledby="" data-parent="#otherInfomation">
+						<div class="card-body">
+							<div class="form-group">
+								
+								Valid Firstaid Certificate <input type="text" name="birthDay" class="form-control" id="" placeholder="ngày sinh" >
+								<button type="submit" class="btn btn-primary">lưu lại</button>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+		  </div>
+		  <!-- end collapse other information  -->
+
+
+
+		</div>
+		<!-- end tab panel  -->
+		
+		<div id="changePasswordContent" class="container tab-pane fade"><br>
+		<h3>Cập nhật mật khẩu</h3>
+		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		</div>
+
+		<div id="logoutContent" class="container tab-pane fade "><br>
+		<h3>Đăng xuất</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		
+		<div id="addTourContent" class="container tab-pane fade"><br>
+		<h3>Thêm tour</h3>
+		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		
+		<div id="manageTourContent" class="container tab-pane fade"><br>
+		<h3>Chỉnh sửa tour</h3>
+		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		</div>
+
+		<div id="addPostContent" class="container tab-pane fade"><br>
+		<h3>Thêm bài viết</h3>
+		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		
+		<div id="managePostContent" class="container tab-pane fade"><br>
+		<h3>Chỉnh sửa bài viết</h3>
+		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		</div>
+	
+  </div>
+  <!-- end tab content  -->
+
+
+
+
+
+
+			</div>
+			<!-- end Setting col-7 content  -->
+
+
+			<div class="col-sm-1 col-md-1 empty">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+
+			</div>
+
+
+
+
+
+
+		</div>
+		<!-- end row  -->
+	</div>
+	<!-- end container  -->
+
+</body>
+</html>

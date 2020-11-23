@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload file</title>
+
+    <link rel="stylesheet" href="vendor/dropZone/dropzone.min.css">
+<script src="vendor/dropZone/dropzone.min.js"></script>
+
+</head>
+<body>
+    
+
+
+    <form action="/file-upload" class="dropzone">
+        <div class="fallback">
+          <input id="imageUpload" name="file" type="file" multiple />
+        </div>
+      </form>
+
+
+      <script>
+          var myDropzone = new Dropzone("#imageUpload", { url: "/file/post"});
+
+      </script>
+</body>
+</html>

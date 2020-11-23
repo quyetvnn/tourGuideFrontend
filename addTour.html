@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> add Tour </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+     
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+    <link rel="stylesheet" href="vendor/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- add style for progress Circle  -->
+	<link rel="stylesheet" href="vendor/progressCicle/css/styles.css">
+     
+     <!-- add style and link for double range slider  -->
+     <link rel="stylesheet" href="vendor/doubleRangeSlider/asRange.min.css">
+     <script src="vendor/doubleRangeSlider/jquery-asRange.min.js"></script>
+
+     <!-- add fileUpload  -->
+     <link rel="stylesheet" href="vendor/fileUpload/fileup.css" >
+     <script type="text/javascript" src="vendor/fileUpload/fileup.js"></script>
+
+     
+</head>
+<body >
+
+
+<!-- header -->
+<div class="container">
+	<div class="row">
+
+	<div class="header__cover">
+
+		<div class="__leftMenu">
+			<span class="__logo">
+				<img src="image/__headerMenu/logo.png" alt="">
+
+			</span>
+			<span class="searchbar">
+				<form action="/action_page.php">
+					<button type="submit"><i class="fa fa-search"></i></button>
+					<input type="text" placeholder="Bất cứ đâu - Trải nghiệm" name="search">
+					
+					</form>
+			</span>
+		</div>
+		<!-- end leftbar -->
+
+		<div class="__rightMenu">
+			<ul>Khám phá <i class="fa fa-caret-down"></i>
+				<li> <a href="">exam1</a> </li>
+				<li> <a href="">exam1</a> </li>
+				<li> <a href="">exam1</a> </li>
+			</ul>
+			<ul>
+				<li><a href="">Về chúng tôi</a></li>
+			</ul>
+			<ul>
+				<li><a href="">blog</a></li>
+			</ul>
+
+			<span class="status">
+				<img src="image/__headerMenu/mailIcon.png" alt="">
+				<div class="notification">5</div>
+			</span>
+			<span class="status">
+				<img src="image/__headerMenu/alarmIcon.png" alt="">
+				<div class="notification">10</div>
+			</span>
+
+			<span class="account">
+				<img src="image/__headerMenu/profileAvatar.png" alt="">
+				<ul>Khám phá <i class="fa fa-caret-down"></i>
+					<li> <a href="">exam1</a> </li>
+					<li> <a href="">exam1</a> </li>
+					<li> <a href="">exam1</a> </li>
+				</ul>
+			</span>
+
+		</div>
+		<!-- end rightbar  -->
+
+	</div>
+	<!-- end header cover  -->
+</div>
+</div>
+<!-- end container header -->
+
+	<div class="container __content ">
+		<div class="row">
+
+
+        <!-- 
+            ## LEFT MENU BAR 
+        -->
+			<div class="col-sm-3 col-md-3 leftContent">
+				<!-- first div: load infomation about the profile  -->
+				<div class="profile Bar">
+
+					<span class="profileImg">
+
+						<!-- progress Circle Bar, profile Avatar, change Avatar Button -->
+						<div class="progress-circle progressing p-75">
+							<div class="progress-circle-border">
+							<div class="left-half-circle"></div><div class="right-half-circle"></div>
+							</div>
+							<div class="progress-circle-content">
+
+								<div class="avatar">
+									<img src="image/__profilePage/avatarProfile.png" alt="">
+								</div>
+								<div class="changeAvatar">
+									<a href=""><img src="image/__profilePage/cameraIcon.png" alt=""></a>
+								</div>
+
+							</div>
+						</div>
+
+					</span> 
+					<!-- end span about profile image -->
+
+					<span class="info">
+						<h3>Xin chào, Maria!</h3>
+						<p>bạn đã hoàn thành <b>75%</b> hồ sơ, hãy tiếp tục!</p>
+					</span>
+
+				</div>
+
+				<!-- show social notification  -->
+				<div class="social settingBar  ">
+					<a class="__menuLink" href="#socialContent">
+						<img src="image/__profilePage/globalIcon.png" alt="">
+						<p>yêu cầu cộng đồng</p>
+						<span class="count">4</span>						
+					</a>
+				</div>
+
+			<!-- user accont manage and setting  -->
+				<p>Quản lý tài khoản</p>
+				<div class="editUser settingBar  ">
+					<a class="__menuLink" href="#editUserContent">
+						<img src="image/__profilePage/editProfileIcon.png" alt="">
+						<p>Cập nhật hồ sơ</p>
+						<span class="arlert active">4</span>
+					</a>
+				</div>
+
+				<div class="changePassword settingBar  ">
+					<a class="__menuLink" href="#changePasswordContent">
+						<img src="image/__profilePage/passwordIcon.png" alt="">
+						<p>đổi mật khẩu</p>
+						<span class="count"></span>	
+					</a>
+
+				</div>
+
+				<div class="logout settingBar  ">
+					<a class="__menuLink" href="#logoutContent">
+						<img src="image/__profilePage/logoutIcon.png" alt="">
+						<p>Đăng xuất</p>
+						<span class="count"></span>
+					</a>
+				</div>
+
+			<!-- Tour manage and setting  -->
+
+				<p>Quản lý tour</p>
+				<div class="addTour settingBar  ">
+					<a class="__menuLink" href="#addTourContent">
+						<img src="image/__profilePage/addTourIcon.png" alt="">
+						<p>Thêm tour</p>
+						<span class="count"></span>
+					</a>
+				</div>
+
+				<div class="manageTour settingBar  ">
+					<a class="__menuLink" href="#manageTourContent">
+						<img src="image/__profilePage/manageTourIcon.png" alt="">
+						<p>Quản lý tour</p>
+						<span class="count">4</span>
+					</a>
+				</div>
+
+			<!-- Tour manage and setting  -->
+				<p>Quản lý bài viết</p>
+				<div class="addPost settingBar  ">
+					<a class="__menuLink" href="#addPostContent">
+						<img src="image/__profilePage/addPostIcon.png" alt="">
+						<p>Thêm bài viết</p>
+						<span class="count"></span>
+					</a>
+				</div>
+
+				<div class="managePost settingBar  ">
+					<a class="__menuLink" href="#managePostContent">
+						<img src="image/__profilePage/managePostIcon.png" alt="">
+						<p>Quản lý bài viết</p>
+						<span class="count">4</span>
+					</a>
+				</div>
+			
+
+
+
+
+            </div>
+            
+            <!-- 
+                ## end Left MENU BAR  
+            -->
+
+			<div class="col-sm-1 col-md-1 empty">
+				<p>Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
+			</div>
+
+
+			<!-- right Content  -->
+			<div class="col-sm-7 col-md-7 rightContent">
+
+                <!-- Admin Setting content -->
+                <div class="tab-content">
+             
+                    <!-- 
+                    ## content changePasswordContent 
+                    -->
+                    <div id="changePasswordContent" class="container"><br>
+
+                        <h3>Thêm tour</h3>
+
+                        <div class="cover">
+                            
+                            <!-- form Information  -->
+                            <form>
+                                    <!-- tên tour  -->
+                                    <div class="form-group">
+                                        <label for="">Tên của tour</label>
+                                        <input type="text" class="form-control" id="" placeholder="nhập tên tour">
+                                    </div>
+
+                                    <!-- loại hình tour  -->
+                                    <div class="form-group">
+
+                                        <label for="">Loại hình của tour</label>
+                                        <div class="form-check columnLeft">
+                                            <input class="form-check-input" type="radio" name="loai_hinh_tour" id="ve-trong-ngay" value="ve-trong-ngay" checked>
+                                            <label class="form-check-label" for="ve-trong-ngay">
+                                            Về trong ngày
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="form-check columnRight">
+                                        <input class="form-check-input" type="radio" name="loai_hinh_tour" id="tron-goi" value="tron-goi">
+                                        <label class="form-check-label" for="tron-goi">
+                                            Trọn gói
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- các hoạt động trải nghiệm, mạo hiểm, văn hóa giáo duc...  -->
+                                    
+                                        <div class="form-group">
+                                            <label for="">Những hoạt động trải nghiệm</label>
+
+                                            <div class="form-check columnLeft">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input" name="thamquan" id="" value="" >
+                                                    tham quan ngắm cảnh
+                                                    </label>
+                                            </div>
+
+                                            <div class="form-check columnRight">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input" name="nongtrai" id="" value="" >
+                                                    nông trại vùng sâu
+                                                    </label>
+                                            </div>
+
+
+                                            <div class="form-check columnLeft">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input" name="ngoaitroi" id="" value="" >
+                                                    mạo hiểm ngoài trời
+                                                    </label>
+                                            </div>
+
+                                            <div class="form-check columnRight">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input" name="amthuc" id="" value="" >
+                                                    ẩm thực
+                                                    </label>
+                                            </div>
+
+                                            <div class="form-check columnLeft">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input" name="giaoduc" id="" value="" >
+                                                    văn hóa giáo dục
+                                                    </label>
+                                            </div>
+
+                                            <div class="form-check columnRight">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input" name="kinhdoanh" id="" value="" >
+                                                    kinh doanh đầu tư
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <!-- end group  -->
+
+
+                                    <!-- Group chi phí  -->
+                                    <div class="form-group">
+                                        <label for="" class="columnLeft">Chi phí mỗi giờ dành cho 1 người</label>
+                                        <div class="columnRight">
+                                            <input class="feeRange" type="text" min="0" max="60" value="20" name="points" step="">
+                                        </div>
+
+                                        <!-- GET value of fee  -->
+                                        <!-- <div class="feeContent"></div> -->
+                                    </div>
+                                       
+                                        <script>
+                                          $(document).ready(function() {
+                                              
+                                            var setValue = $(".feeRange").asRange({
+                                              step: 1,
+                                              limit: true,
+                                              range: true,
+                                              format: function(value) {
+                                                return '$' + value;
+                                              },
+                                              onChange: function(value) {
+                                                $('.feeContent').empty();
+                                                $('.feeContent').append($('<div> <span>value: </span>' + value[0] + '-' + value[1] + '</div>'));
+                                              }
+                                              
+                                            });
+                                            console.log(setValue.asRange('set', [20, 40]));
+                                            
+                                          });
+                                        </script>
+                                    <div class="form-group">
+                                        <label for="">Hình ảnh về tour </label>
+                                        <p id="showNumberImage"> Hình ảnh về tour <b></b></p>
+                                        <br>
+
+                                        <button type="button" class="fileup-btn">
+                                            <img src="image/__addTour/addImageIcon.png" alt="">
+                                              <input type="file" id="upload-demo" multiple accept="image/*">
+                                        </button>
+                                        <div id="upload-demo-queue" class="queue"></div>
+                                            
+                                    </div>
+                                    
+                                    <script>
+                                        $.count;
+                                        $.fileup({
+
+                                            url: 'upload.php',
+                                            inputID: 'upload-demo',
+                                            queueID: 'upload-demo-queue',
+                                            onSuccess: function(response, file_number, file) {
+                                                // do something
+                                                
+
+                                            },
+                                            onError: function(event, file, file_number) {
+                                                // do something
+                                            },
+                                            templateFile: '<div id="fileup-[INPUT_ID]-[FILE_NUM]" class="fileup-file [TYPE]">' +
+                                                '<div class="fileup-preview">' +
+                                                '<img src="[PREVIEW_SRC]" alt="[NAME]"/>' +
+                                                // '</div>' +
+                                                // '<div class="fileup-container">' +
+                                                // '<div class="fileup-description">' +
+                                                // '<span class="fileup-name">[NAME]</span> (<span class="fileup-size">[SIZE_HUMAN]</span>)' +
+                                                // '</div>' +
+                                                '<div class="fileup-controls">' +
+                                                '<span class="fileup-remove" onclick="$.fileup(\'[INPUT_ID]\', \'remove\', \'[FILE_NUM]\');" title="[REMOVE]"></span>' +
+                                                // '<span class="fileup-upload" onclick="$.fileup(\'[INPUT_ID]\', \'upload\', \'[FILE_NUM]\');">[UPLOAD]</span>' +
+                                                '<span class="fileup-abort" onclick="$.fileup(\'[INPUT_ID]\', \'abort\', \'[FILE_NUM]\');" style="display:none">[ABORT]</span>' +
+                                                '</div>' +
+                                                // '<div class="fileup-result"></div>' +
+                                                // '<div class="fileup-progress">' +
+                                                // '<div class="fileup-progress-bar"></div>' +
+                                                // '</div>' +
+                                                '</div>' +
+                                                // '<div class="fileup-clear"></div>' +
+                                                '</div>',
+                                                
+
+
+                                        });
+
+
+
+
+                                        $('#upload-demo').click(function() {
+                                           
+                                            
+                                            var kids = $('#upload-demo-queue').children().length;
+                                                console.log('số ảnh: '+kids);
+                                                $('#showNumberImage>b').html(kids+"/7");
+                                     
+                                           
+
+                                        });
+
+
+                                    </script>
+
+
+
+
+                                    <br>
+                                    <br>
+                                    <br>
+
+                            </form>
+
+
+                        </div>
+                        <!-- end cover   -->
+
+                    </div>
+                    <!-- end changePasswordContent  -->
+
+                </div>
+                <!-- end tab content  -->
+
+
+			</div>
+			<!-- end COL-7 SETTING FROFILE CONTENT  -->
+
+
+			<div class="col-sm-1 col-md-1 empty">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+
+			</div>
+
+
+		</div>
+		<!-- end row  -->
+	</div>
+	<!-- end container  -->
+
+</body>
+</html>
